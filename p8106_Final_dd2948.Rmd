@@ -122,7 +122,7 @@ labels(dend) <- paste(as.character(trip[,14])[order.dendrogram(dend)],
 dend <- hang.dendrogram(dend,hang_height=0.1)
 # reduce the size of the labels:
 #dend <- assign_values_to_leaves_nodePar(dend, 0.05, "lab.cex")
-dend <- set(dend, "labels_cex", 0.4)
+dend <- set(dend, "labels_cex", 0.10)
 # And plot:
 par(mar = c(3,3,3,7))
 plot(dend, 
